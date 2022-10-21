@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Girassol&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+
+/* DEFINIÇÃO CABEÇALHO (header) */
+
+.header{
+    overflow: hidden;
+    background-color: white;
+    padding: 10px 2px;
+    align-items: center;
+}
+
+.logo_hjr{
+    color: black;
+    background-color: white;
+    font-family: girassol;
+    font-size: 40px;
+    text-decoration: none;   
+    display: flex;              /*Permite que o texto fique centralizado na header*/
+    justify-content: center;
+    align-items: center;
+}
+
+.fazer_login{
+    margin-top: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo_fazer_login{
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+}
+
+.subtitulo_fazer_login{
+    margin-top: 3px;
+    font-family: DM Sans;
+    font-size: 15px;
+    color: white;
+}
+
+#link_cadastro{
+    color: white;
+    text-decoration: line;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.div_inserir{
+    font-size: 14px;
+    font-family: DM Sans;
+    color: white;
+}
+
+.senha_cliente{
+    text-align: center;
+    margin-top: 7px;
+    width: 296px;
+    height: 27px;
+    border-radius: 10px;
+    border: solid transparent;          /*Faz com que a borda não apareça na tela*/
+    background-color: rgba(204, 202, 202, 1);
+    font-family: DM Sans;
+}
+
+.email_cliente{
+    text-align: center;
+    margin-top: 7px;
+    width: 296px;
+    height: 27px;
+    border-radius: 10px;
+    border: solid transparent;          /*Faz com que a borda não apareça na tela*/
+    background-color: rgba(204, 202, 202, 1);
+    font-family: DM Sans;
+}
+
+hr{
+    margin-top: 2px ; 
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.194);
+    size: 100%;
+}
+
+#termos_texto{
+    color: white;
+    font-family: Dm Sans;
+    font-size: 10px ;
+}
+
+#link_tp{
+    text-decoration: line;
+    color: white;
+}
+
+#botao_entrar{
+    width: 220px;
+    height: 50px;
+    border-radius: 80px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-family: DM Sans;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sem_login{
+    color: white;
+    font-family: Dm Sans;
+    font-size: 10px ;
+}
+
+#link_sem_login{
+    color: white;
+    text-decoration: line;
+}

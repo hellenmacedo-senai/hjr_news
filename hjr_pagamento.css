@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Girassol&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+
+/* DEFINIÇÃO CABEÇALHO (header) */
+
+.header{
+    overflow: hidden;
+    background-color: white;
+    padding: 10px 2px;
+    width: 100%;
+    align-items: center;
+}
+
+.logo_hjr{
+    color: black;
+    background-color: white;
+    font-family: girassol;
+    font-size: 40px;
+    text-decoration: none;   
+    display: flex;              /*Permite que o texto fique centralizado na header*/
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* DEFINIÇÃO CORPO - TÍTULO */
+
+.info_pagamento{
+    margin-top: 33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#titulo_pagamento{
+    font-family: DM Sans;
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+}
+
+.subtitulo_pagamento{
+    margin-top: 3px;
+    font-family: DM Sans;
+    font-size: 15px;
+    color: white;
+}
+
+#link_cadastro{
+    color: white;
+    text-decoration: line;
+}
+
+
+/* DEFINIÇÃO DO FORM */
+
+.pagamento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.div_inserir{
+    font-size: 14px;
+    font-family: DM Sans;
+    color: white;
+}
+
+#inserir_nome{
+    float: left;
+    margin: 5px;
+}
+
+#input_nome{
+    text-align: center;
+    margin-top: 5px;
+    width: 143px;
+    height: 27px;
+    border-radius: 10px;
+    border: solid transparent;          /*Faz com que a borda não apareça na tela*/
+    background-color: rgba(204, 202, 202, 1);
+    font-family: DM Sans;
+}
+
+#input_cadastro{
+    text-align: center;
+    margin-top: 5px;
+    width: 296px;
+    height: 27px;
+    border-radius: 10px;
+    border: solid transparent;          /*Faz com que a borda não apareça na tela*/
+    background-color: rgba(204, 202, 202, 1);
+    font-family: DM Sans;
+}
+
+#data_nasc{
+    text-align: center;
+    margin-top: 7px;
+    width: 296px;
+    height: 27px;
+    border-radius: 10px;
+    border: solid transparent;
+    background-color: rgba(204, 202, 202, 1);
+    font-family: DM Sans;
+}
+
+hr{
+    margin-top: 2px ; 
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.194);
+    size: 100%;
+}
+
+#termos_texto{
+    color: white;
+    font-family: Dm Sans;
+    font-size: 10px ;
+}
+
+#link_tp{
+    text-decoration: line;
+    color: white;
+}
+
+#botao_cadastrar{
+    width: 220px;
+    height: 50px;
+    border-radius: 80px;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-family: DM Sans;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#botao_cadastrar:hover{
+    background-color: rgb(218, 218, 218);
+}
+
+.transacao_segura{
+    margin-top: 10px;
+    color: green;
+    font-family: Dm Sans;
+    font-size: 10px ;
+}

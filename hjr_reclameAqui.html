@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hjr_reclameAqui.css">
+    <title>Reclame Aqui</title>
+</head>
+<body>
+    
+    <!-- DIV HEADER: é uma header onde está o logo do site, o cabeçalho -->
+    <div class="header">
+        <div class="header_logo"> 
+            <div class="logo">    
+
+                <button  class="button-popup"><img src="menu.png" alt="menu" height="22px" width="22px"> </button>
+                    
+                <div class="popup-wrapper">
+                    <div class="popup">
+                        <div class="popup-close">x</div>
+                        <div class="popup-content">
+                                                           
+                                        <a href="hjr_inicio.html">Início</a><hr>
+                                        <a href="hjr_mundo.html">Mundo</a><hr>
+                                        <a href="hjr_politica.html">Política</a><hr> 
+                                        <a href="hjr_saude.html">Saúde</a><hr> 
+                                        <a href="hjr_musica.html">Música</a><hr> 
+                                        <a href="hjr_cinema.html">Cinema</a><hr> 
+                                        <a href="hjr_signos.html">Signos</a><hr> <br>
+
+                                        <a href="hjr_perfil.html">Seu Perfil</a><hr>
+                                        <a href="hjr_reclameAqui.html">Dê Seu Feedback</a><hr> 
+                                        <a href="hjr_quemSomos.html">Quem Somos</a><hr> 
+                                        <a href="hjr_termosDeUso.html">Termos de Uso</a><hr> 
+                                        <a href="hjr_politicaDePriv.html">Política de Privacidade</a> <hr>                             
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <a id="svg" href="hjr_inicio.html"><img src="Untitled.svg" alt="HJR News"></a>
+                <img id="procurar_img" src="procurar.png">
+                   
+                <a href="hjr_login.html"> 
+                    <button id="btn_entrar">ENTRAR</button> 
+                </a>
+                <a href="hjr_assinatura.html"> 
+                    <button id="btn_cadastrar">ASSINE JÁ</button> 
+                </a>
+
+            </div>
+        </div>
+    </div>
+   
+    <div class="RA_inicio">
+        <h1>Dê Seu Feedback</h1>
+
+        <!-- <hr class="linha"> -->
+        <hr>
+
+        <br>
+
+        <div class="descricao">
+        <p>Está com problemas no nosso site? Percebeu algum erro? Tem algo que gostaria que melhorássemos? <br><br>
+            Conte-nos seu problema e dê seu feedback abaixo.</p>
+        </div>
+        
+    </div>
+
+    <br><br>
+
+    <form action="reclameaqui.php" method="post" class="reclame">
+
+        <!-- <div class="div_inserir">
+            <p id="inserir">INSIRA SEU NOME COMPLETO * <br> 
+                <input type="text" name="nome" id="input_feedback" required>
+            </p>
+        </div>
+
+        <br><br>
+
+        <div class="div_inserir">
+            <p id="inserir">INSIRA SEU EMAIL * <br> 
+                <input type="email" name="email" id="input_feedback" required>
+            </p>
+        </div>
+
+        <br><br> -->
+
+        <div class="div_inserir">
+            <p id="inserir">CONTE-NOS SUA EXPERIÊNCIA * <br> 
+                <input type="text" name="experiencia" id="input_feedback2" 
+                placeholder="Ex: 'Não consigo avaliar as notícias', etc..." required>
+            </p>
+        </div>
+
+        <br><br>
+
+        <div class="div_inserir">
+            <p id="inserir">COMO PODERÍAMOS MELHORAR? <br> 
+                <input type="text" name="melhoria" id="input_feedback2">
+            </p>
+        </div>
+
+        <br><br>
+
+    <input type="submit" value="Enviar Feedback" name="gravar" id="botao_feedback">
+    
+
+    </form>
+
+    
+
+    <br><br>
+    
+<script src="hjr_inicio_popup.js"></script>
+
+
+</body>

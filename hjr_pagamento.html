@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hjr_pagamento.css">
+    <title>Pagamento</title>
+</head>
+<body>
+
+    <!-- DIV HEADER: é uma header onde está o logo do site, o cabeçalho -->
+    <div class="header">                                     
+        <a href="hjr_inicio.html" class="logo_hjr">HJR News</a>
+   </div>
+
+   <!-- DIV CRIAR CONTA: o título e subtítulo do site de cadastro; 
+        A HREF: direciona o usuário para outro site ao clicar no texto sublinhado. -->
+   <div class="info_pagamento">
+       <p id="titulo_pagamento">Informações de Pagamento.</p>
+       <br>
+       <p class="subtitulo_pagamento"> LOGADO COMO <br>
+            <a href="hjr_cadastro.html" id="link_cadastro">NÃO É VOCÊ?</a>
+       </p>
+   </div>
+
+   <br> <br> <br>
+
+   <!-- Formulário aberto -->
+   <form action="hjr_pagamento.html" method="post" class="pagamento">
+
+
+    <!-- DIV INSERIR: Local onde o usuário preencherá os campos com seus dados -->
+
+    <div class="div_inserir">
+        <p id="inserir_nome">PRIMEIRO NOME <br> 
+            <input type="text" name="nome" id="input_nome" required>
+        </p>
+        <p id="inserir_nome">SOBRENOME <br> 
+            <input type="text" name="nome" id="input_nome" required>
+        </p>
+    </div>
+
+    <br><br>
+
+    <div class="div_inserir">
+        <p id="inserir">CARTÃO DE CRÉDITO OU DÉBITO <br>
+            <input type="email" name="email" id="input_cadastro" placeholder="Número do Cartão" required>
+        </p>
+    </div>
+
+    <br>
+
+    <br>
+
+    <div class="div_inserir">
+        <p id="inserir_nome">VALIDADE <br> 
+            <input type="date" name="validade" id="input_nome" required>
+        </p>
+        <p id="inserir_nome">CVV<br> 
+            <input type="text" name="cvv" id="input_nome" placeholder="XXX">
+        </p>
+    </div>
+
+    <br>
+    <br>
+    
+    <div class="div_inserir">
+        <p id="inserir_nome">CPF <br> 
+            <input type="text" name="cpf" id="input_cadastro" placeholder="000.000.000-00">
+        </p>
+    </div>
+
+    <br>
+
+    <!-- DIV TERMOS TEXTO: este contâiner apresenta o texto de termos de serviço que ao clicar no texto
+    sublinhado, o usuário será direcionado para outra página -->
+    <div class="div_termos_texto"> 
+        <p id="termos_texto">Ao continuar, você concorda com os 
+            <a href="hjr_termos_privacidade.html" id="link_tp">Termos de Serviço </a> e
+            <br> reconhece nossa <a href="hjr_termos_privacidade.html" id="link_tp">Política de Privacidade.</a> 
+        </p>
+    </div>
+
+    <br>
+
+    <!-- INPUT SUBMIT: botão para enviar os dados do formulário para o banco de dados -->
+    <a href="hjr_pagamento.html">
+        <input type="submit" value="Finalizar" name="gravar" id="botao_cadastrar">
+    </a>
+
+
+    <div class="transacao_segura">
+        ✓ Transação Segura
+    </div>
+
+    <br><br>
+
+   </form>
+
+</body>
+</html>

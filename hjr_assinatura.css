@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Girassol&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+
+/* DEFINIÇÃO CABEÇALHO (header) */
+
+.header{
+    overflow: hidden;
+    background-color: white;
+    padding: 10px 2px;
+    align-items: center;
+    width: 100%;
+}
+
+.logo_hjr{
+    color: black;
+    background-color: white;
+    font-family: girassol;
+    font-size: 40px;
+    text-decoration: none;   
+    display: flex;              /*Permite que o texto fique centralizado na header*/
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_assinatura{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h1{
+    color: white;
+    font-family: crimson pro;
+    font-size: 30px;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.plano{
+    background-color: rgba(216, 205, 188, 1);
+    max-width: 500px;
+    height: 386px;
+    padding: 37px;
+    border-radius: 10px;
+}
+
+h3{
+    font-family: crimson pro;
+    color: rgba(63, 38, 0, 1);
+    font-size: 19px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 30px;
+}
+
+hr{
+    margin-top: 10px;
+    background-color: rgba(63, 38, 0, 1);
+    border: solid 0.5px rgba(63, 38, 0, 1);
+}
+
+.sub_plano{
+    background-color: transparent;
+    font-family: dm sans;
+    color: rgba(63, 38, 0, 1);
+    text-align: center;
+}
+
+#desc{
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#valor{
+    margin-top: 15px;
+    background-color: transparent;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#sub_valor{
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.btn_assinar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+#assinar{
+    width: 200px;
+    height: 40px;
+    border-radius: 80px;
+    border: none;
+    background-color:rgba(77, 71, 62, 1);
+    color: white;
+    font-size: 20px;
+    font-family: DM Sans;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#assinar:hover{
+    background-color:rgba(63, 38, 0, 1);
+}
+
+#cancelar{
+    background-color: transparent;
+}
+
+a{
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited{
+    text-decoration: none;
+}
+
+#cancelar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: dm sans;
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 5px;
+}

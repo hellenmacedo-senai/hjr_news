@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hjr_login.css">
+    <title>Fazer Login</title>
+</head>
+<body>
+
+    <!-- DIV HEADER: é uma header onde está o logo do site, o cabeçalho -->
+    <div class="header">                                     
+        <a href="hjr_inicio.html" class="logo_hjr">HJR News</a>
+   </div>
+
+   <!-- DIV CRIAR CONTA: o título e subtítulo do site de Login; 
+        A HREF: direciona o usuário para outro site ao clicar no texto sublinhado. -->
+   <div class="fazer_login">
+       <p id="titulo_fazer_login">Bem Vindo De Volta!</p>
+       <br>
+       <p class="subtitulo_fazer_login">ENTRE OU
+            <a href="hjr_cadastro.html" id="link_cadastro">CRIE UMA CONTA</a>
+       </p>
+   </div>
+
+   <br> <br> <br>
+
+   <!-- Formulário aberto -->
+   <form name="f1" action = "authentication.php" onsubmit = "return validation()" method = "POST" class="login">  
+
+    <!-- DIV INSERIR: Local onde o usuário preencherá os campos com seus dados -->
+
+    <div class="div_inserir">
+        <p id="inserir">INSIRA SEU EMAIL <br> 
+            <input type="email" name="email_cliente" class="email_cliente" required> 
+        </p>
+    </div>
+
+    <br><br>
+
+    <div class="div_inserir">
+        <p id="inserir">INSIRA SUA SENHA<br> 
+            <input type="password" name="senha_cliente" class="senha_cliente">
+        </p>
+    
+        <br>
+        <hr>
+        <br>
+
+    </div>
+
+    <div class="div_termos_texto"> 
+        <p id="termos_texto">Ao continuar, você concorda com os 
+            <a href="hjr_termos_privacidade.html" id="link_tp">Termos de Serviço </a> e
+            <br> reconhece nossa <a href="hjr_termos_privacidade.html" id="link_tp">Política de Privacidade.</a> 
+        </p>
+    </div>
+
+    <br>
+
+    <input type="submit" value="Entrar" id="botao_entrar">
+
+    <br>
+
+    <div class="sem_login">
+        Ou <a href="hjr_inicio.html" id="link_sem_login">Continuar Sem Login</a> 
+    </div>
+
+    <br><br>
+   </form>
+   
+   <script>  
+    function validation()  
+    {  
+        var id=document.f1.user.value;  
+        var ps=document.f1.pass.value;  
+        if(id.length=="" && ps.length=="") {  
+            alert("User Name and Password fields are empty");  
+            return false;  
+        }  
+        else  
+        {  
+            if(id.length=="") {  
+                alert("User Name is empty");  
+                return false;  
+            }   
+            if (ps.length=="") {  
+            alert("Password field is empty");  
+            return false;  
+            }  
+        }                             
+    }  
+</script>  
+</body>
+</html>
